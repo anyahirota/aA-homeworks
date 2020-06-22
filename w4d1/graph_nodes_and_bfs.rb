@@ -6,6 +6,10 @@ class GraphNode
         self.neighbors = []
     end
 
+    def add_neighbor(node)
+        self.neighbors << node
+    end 
+
 end
 
 a = GraphNode.new('a')
