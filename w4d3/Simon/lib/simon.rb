@@ -10,11 +10,21 @@ class Simon
   end
 
   def play
-
+    # until @game_over == true 
+    #   self.take_turn
+      
+    # end 
   end
 
   def take_turn
+    # until @game_over == true
+    #   self.require_sequence
+    #   self.show_sequence
+    #     input = gets.chomp
 
+    #   @sequence_length += 1
+    #   self.round_success_message
+    # end
   end
 
   def show_sequence
@@ -36,14 +46,16 @@ class Simon
   end
 
   def round_success_message
-
+    puts "Yay! You made it to the next round. The next sequence will be the length of #{self.sequence_length}"
   end
 
   def game_over_message
-
+    puts "Boohoo, you lose."
   end
 
   def reset_game
-
+    @sequence_length = 1
+    @game_over = false
+    @seq = []
   end
 end
