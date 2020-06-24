@@ -18,11 +18,17 @@ class Simon
   end
 
   def show_sequence
-
+    @seq.each do |ele|
+      puts ele
+      sleep(1)
+      system("clear")
+    end 
   end
 
   def require_sequence
-
+    @sequence_length.times do 
+      self.add_random_color
+    end 
   end
 
   def add_random_color
