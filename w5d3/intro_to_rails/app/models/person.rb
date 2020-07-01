@@ -1,6 +1,6 @@
 class Person < ApplicationRecord
-    # validate :name, presence: true
-    # validate :house_id, presence: true
+    validates :name, presence: true
+    validates :house_id, presence: true
 
     belongs_to(
     :house,

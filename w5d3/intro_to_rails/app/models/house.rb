@@ -1,5 +1,5 @@
 class House < ApplicationRecord
-    # validate :address, presence: true
+    validates :address, presence: true
 
     has_many(
     :residents,
